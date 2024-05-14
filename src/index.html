@@ -6,6 +6,7 @@
         <title>Book Library</title>
         <link href="styles/dialog.css" rel="stylesheet">
         <link href="styles/main.css" rel="stylesheet">
+        <link href="styles/book-list.css" rel="stylesheet">
         <script src="js/main.js" defer></script>
     </head>
     <body>
@@ -45,8 +46,26 @@
 
 
         <div class="books-list">
-            <div class="book-list-item">
-            </div>
         </div>
+
+        <template id="book-list-item-template">
+
+            <div class="books-list-item">
+                <div class="books-list-item-title">
+                    Hobbit
+                </div>
+                <div class="books-list-item-author">
+                    Tolkien
+                </div>
+                <div class="books-list-item-pages">
+                    300 Pages
+                </div>
+                <div>
+                    <input type="checkbox">
+                    <span>Read this book </span>
+                </div>
+            </div>
+
+        </template>
     </body>
 </html>
