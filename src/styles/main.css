@@ -1,7 +1,14 @@
 body {
     margin: 0;
-    background-color: #cecece;
 }
+
 h1 {
     text-align: center;
 }
+
+button {
+    line-height: 2rem;
+    font-size: 1rem;
+    font-weight: bold;
+}
+

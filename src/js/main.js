@@ -7,6 +7,21 @@ const readCheckBox = document.querySelector('#read');
 const addBookButton = document.querySelector('#add-book-btn');
 const booksListDiv = document.querySelector('.books-list');
 
+
+const dialog = document.querySelector('dialog');
+const showDialogButton = document.querySelector('#show-dialog-btn');
+const addBookDialogButton = document.querySelector('#add-book-dialog-btn');
+
+
+showDialogButton.addEventListener('click', (event) => {
+    dialog.showModal();
+});
+
+addBookDialogButton.addEventListener('click', (event) => {
+    dialog.close();
+
+});
+
 function createListItem(book, id) {
     const bookListItem = document.createElement('div');
     bookListItem.className = "book-list-item";
@@ -33,14 +48,14 @@ function showBooks() {
     });
 }
 
-addBookButton.addEventListener('click', (event) => {
+addBookDialogButton.addEventListener('click', (event) => {
     const book = new Book(titleInput.value,
                           authorInput.value,
                           pagesInput.value,
                           readCheckBox.checked);
-                          addBookToLibrary(book);
+    addBookToLibrary(book);
 
-                          showBooks();
+    showBooks();
 
 });
 

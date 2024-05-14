@@ -1,0 +1,33 @@
+.dialog-title {
+    text-align: center;
+    margin-top: 0;
+    text-decoration: underline;
+}
+
+
+dialog label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.dialog-buttons {
+    float: right;
+}
+
+.form-element {
+    margin-bottom: 1rem;
+}
+
+.form-element input {
+    line-height: 1.8rem;
+    font-size: 1rem;
+}
+
+dialog button {
+    width: 95px;
+}
+#show-dialog-btn {
+    display: block;
+    width: 150px;
+    margin: auto;
+}

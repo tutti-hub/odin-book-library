@@ -4,26 +4,45 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Book Library</title>
+        <link href="styles/dialog.css" rel="stylesheet">
         <link href="styles/main.css" rel="stylesheet">
         <script src="js/main.js" defer></script>
     </head>
     <body>
         <h1>Book Library</h1>
-        <div class="">
-            <label for="title">Book Title</label>
-            <input id="title" type="text" >
+        <dialog>
+        <h3 class="dialog-title">New Book</h3>
+        <form action="" method="dialog">
+            <div class="form-element">
+                <label for="title">Book title:</label>
+                <input id="title" type="text" required placeholder="Hobbit">
+            </div>
 
-            <label for="author">Author</label>
-            <input id="author" type="text" >
+            <div class="form-element">
+                <label for="author">Author:</label>
+                <input id="author" type="text" required placeholder="J.J.R. Tolkien">
+            </div>
 
-            <label for="pages">Pages Count</label>
-            <input id="pages" type="number" >
+            <div class="form-element">
+                <label for="pages">Pages count:</label required>
+                <input id="pages" type="number" value="2">
+            </div>
 
-            <label for="read">Read this Book </label>
-            <input id="read" type="checkbox" >
+            <div class="form-element">
+                <input id="read" type="checkbox" >
+                </span> Read this book: </span>
+            </div>
 
-            <button id="add-book-btn" type="button">Add Book</button>
-        </div>
+            <div class="dialog-buttons">
+                <button id="add-book-dialog-btn" type="submit">Add book</button>
+                <button id="cancel-dialog-btn" formnovalidate >Cancel</button>
+            </div>
+        </form>
+
+        </dialog>
+
+        <button id="show-dialog-btn">NEW BOOK</button>
+
 
         <div class="books-list">
             <div class="book-list-item">
