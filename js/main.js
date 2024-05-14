@@ -46,9 +46,9 @@ booksListDiv.addEventListener('click', (event) => {
 });
 
 let myLibrary = [
-    new Book('Hobbit', 'Tolkien', 377),
-    new Book('Harry Potter', 'Joan Rolling', 666),
-    new Book('In America', 'Susan Sontag', 333)
+    new Book('The Atlas Six', 'Olivie Blake', 576),
+    new Book('As Good As Dead', 'Holly Jackson', 536),
+    new Book('In America', 'Susan Sontag', 480)
 ];
 
 function Book(title, author, pages, read=false) {
